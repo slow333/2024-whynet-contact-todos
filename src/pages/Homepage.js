@@ -1,19 +1,17 @@
 import NavBar from "../components/NavBar2";
-import styles from '../module-css/Homepage.module.css'
-import {Outlet} from "react-router-dom";
+import TodoList from "../components/TodoList";
+import TodoNav from "./TodoNav";
+import NavEl from "./NavEl";
+import TodoForm from "../components/TodoForm";
 
-function Homepage() {
+function Homepage({todos, handleDelete}) {
 
   return (
-     <div className='container'>
-       <NavBar/>
-       <ol>
-         <li>할일을 정리</li>
-         <li>회사 연락처</li>
-         <li>컨설팅 업체 연락처</li>
-       </ol>
-       <Outlet/>
-     </div>
+     <>
+       <NavEl>
+         <TodoList todos={todos} onDelete={handleDelete}/>
+       </NavEl>
+     </>
   );
 }
 

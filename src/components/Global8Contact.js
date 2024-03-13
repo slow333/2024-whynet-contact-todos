@@ -17,33 +17,33 @@ function Global8Contact() {
     };
   });
   return (
-     <div className='container'>
-       <NavBar/>
-       <h3>Global8 연락처</h3>
+       <div className={styles.contactContainer}>
+         <NavBar/>
+         <div className='title'><h1 className='title'>Global8 연락처.</h1></div>
 
-       <table className={styles.empContainer}>
-         <thead>
-         <tr>
-           <th>이름</th>
-           <th>휴대폰</th>
-           <th>이메일</th>
-           <th>인증 역활</th>
-         </tr>
-         </thead>
-         <tbody>
-         {exEmp.map((em) => (
-              <tr key={em.id}>
-                <td className={styles.emp}>
-                  {em.name} {em.position}
-                </td>
-                <td className={styles.emp}>{em.cellPhone}</td>
-                <td className={styles.emp}>{em.email}</td>
-                <td className={styles.emp}>{em.isoRole}</td>
-              </tr>
-         ))}
-         </tbody>
-       </table>
-     </div>
+         <table className={styles.empContainer}>
+           <thead>
+           <tr>
+             <th>이름</th>
+             <th>휴대폰</th>
+             <th>이메일</th>
+             <th>인증 역활</th>
+           </tr>
+           </thead>
+           <tbody>
+           {exEmp.map((em) => (
+                <tr key={em.id}>
+                  <td className={styles.emp}>
+                    {em.name} {em.position}
+                  </td>
+                  <td className={styles.emp}>{em.cellPhone}</td>
+                  <td className={styles.emp}>{em.email}</td>
+                  <td className={styles.emp}>{em.isoRole}</td>
+                </tr>
+           ))}
+           </tbody>
+         </table>
+       </div>
   );
 }
 

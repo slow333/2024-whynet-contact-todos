@@ -2,3 +2,15 @@
    width: 3.8rem;
    height: 1.2rem;
 }
+
+.navLink {
+   padding: 0.2rem 1rem;
+   color: white;
+   text-decoration: none;
+}
+nav a:global(.active) {
+   background-color: rgb(10,200,254);
+   padding: 0.2rem 1rem;
+   color: green;
+   border-radius: 20px;
+}

@@ -11,6 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  /*font-size: 1rem;*/
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+.title {
+  font-size: 2.2rem;
+}
+/* === HEADING STYLE #1 === */
+.title h1 {
+  text-align: center;
+  text-transform: uppercase;
+  /*padding-bottom: 5px;*/
+}
+.title h1:before {
+  width: 40px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -20px;
+  background-color: #b80000;
+}
+.title h1:after {
+  width: 200px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  left: 50%;
+  margin-left: -100px;
+  background-color: #b80000;
+}
+
 .btn {
   background-color: green;
   color: #dddddd;
