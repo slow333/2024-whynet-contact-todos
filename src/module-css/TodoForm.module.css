@@ -15,3 +15,7 @@ form {
 .label{
    text-align: center;
 }
+
+.textarea {
+   height: 100%;
+}

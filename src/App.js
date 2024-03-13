@@ -34,9 +34,7 @@ function App() {
            <TodoForm setTodos={setTodos}/>
            <NoteForProj todos={todos} onDelete={handleDelete}/>
 
-           <h3>회사 연락처</h3>
            <WhynetContact/>
-           <h3>Global8 연락처</h3>
            <Global8Contact/>
          </div>
 

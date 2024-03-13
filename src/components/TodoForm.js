@@ -33,8 +33,15 @@ function TodoForm({setTodos}) {
                   type="text" className="form-control" placeholder="제목" aria-label="title"/>
            <div className="input-group">
              <span className="input-group-text">내용</span>
-             <textarea onChange={handleChange} name='todo' value={value.todo}
-                       className="form-control" aria-label=" textarea"></textarea>
+             <div className="form-floating">
+               <textarea onChange={handleChange} name='todo' value={value.todo}
+                         placeholder="내용을 입력하세요." rows='3' style={{height: '100%'}}
+                         className="form-control"
+                         aria-label=" textarea"
+                         id="floatingTextarea"
+               />
+               <label htmlFor="floatingTextarea">Comments</label>
+             </div>
              <button className='btn btn-success'>입력</button>
            </div>
 
