@@ -1,0 +1,28 @@
+.empContainer {
+  font-size: 1rem;
+  /* display: grid; */
+  width: 100%;
+  /*width: calc(100vw - 10rem);*/
+  /* grid-template-columns: 10rem 9rem 11rem 1fr 1fr 1fr; */
+  /*grid-template-columns: repeat(4,1fr);*/
+  /*grid-template-rows: auto 1fr;*/
+  border: solid 1px #ddd;
+}
+
+th {
+  border: solid 1px #ddd;
+  text-align: center;
+}
+.emp {
+  text-align: center;
+  border-right: 0.5rem solid green;
+  padding: 0.5rem;
+}
+.emp:last-child {
+  border: none;
+}
+
+h2 {
+  margin: 2rem 0 2rem 0;
+  font-weight: 600;
+}

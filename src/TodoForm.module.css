@@ -1,0 +1,17 @@
+form {
+   display: grid;
+   grid-template-columns: 2rem 1fr 2rem 2fr 6rem;
+   grid-template-rows: auto;
+   column-gap: 0.5rem;
+   margin-bottom: 2rem;
+}
+.btn {
+   background-color: green;
+   color: #dddddd;
+   border-radius: 9px;
+   border: none;
+   font-weight: 500;
+}
+.label{
+   text-align: center;
+}
