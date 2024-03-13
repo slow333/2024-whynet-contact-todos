@@ -1,5 +1,5 @@
-import styles from "./Emp.module.css";
-import {data} from "./data";
+import styles from "../module-css/Emp.module.css";
+import {data} from "../data";
 
 const WhynetContact = () => {
   const whynetEmp = data.map((d) => {

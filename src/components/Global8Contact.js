@@ -1,5 +1,5 @@
-import styles from "./Emp.module.css";
-import {exData} from "./data";
+import styles from "../module-css/Emp.module.css";
+import {exData} from "../data";
 
 function Global8Contact() {
   const exEmp = exData.map((d) => {
